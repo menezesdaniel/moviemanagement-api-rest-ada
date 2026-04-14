@@ -72,10 +72,3 @@ class ErrorResponse {
     private String message;
     private Map<String, String> fieldErrors;
 }
-
-// Exception customizada
-class ResourceNotFoundException extends RuntimeException {
-    public ResourceNotFoundException(String message) {
-        super(message);
-    }
-}

@@ -47,7 +47,7 @@ public class Filme {
     
     @DecimalMin(value = "0.0", message = "A avaliação deve ser maior ou igual a 0")
     @DecimalMax(value = "10.0", message = "A avaliação deve ser menor ou igual a 10")
-    @Column(precision = 3, scale = 1)
+    @Column
     private Double avaliacao;
     
     @Column(name = "url_poster", length = 500)
